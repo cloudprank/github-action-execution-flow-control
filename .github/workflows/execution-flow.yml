@@ -81,4 +81,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate report
-        run: echo "Generating report..."
+        run: |
+          echo "Generating report someting wrong..."
+          echo "${{ toJSON(github) }}"
